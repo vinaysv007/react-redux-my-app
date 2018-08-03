@@ -1,0 +1,30 @@
+.chatContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar main";
+    width: 95vw;
+    height: 95vh;
+}
+.sidebar{
+    border: 1px solid red;
+    grid-area: sidebar;
+    height: 100%;
+    padding: 5px 0 0 5px;
+}
+
+#main {
+    grid-area: main;
+}
+
+.newMessage {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid blue;
+    margin-left: 0px;
+}
+
+.listMessage {
+    padding: 5px 0 0 5px;
+    border: 1px solid yellow;
+}
